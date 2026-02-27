@@ -1,0 +1,5 @@
+-- SCHEMA: game
+
+-- DROP SCHEMA IF EXISTS game ;
+
+CREATE SCHEMA IF NOT EXISTS game;

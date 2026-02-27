@@ -1,2 +1,3 @@
-# board-game
+# Board Game
+
 Board Game Web-App

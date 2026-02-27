@@ -1,0 +1,41 @@
+name: board-game
+
+services:
+  postgres:
+    container_name: ${DB_CONTAINER_NAME}
+    image: postgres:18
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "${DB_PORT}:${DB_PORT_INTERNAL}"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    networks:
+      - my_network
+    restart: always
+
+  pgadmin:
+    container_name: ${PGADMIN_CONTAINER_NAME}
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
+    ports:
+      - "${PGADMIN_PORT}:${PGADMIN_PORT_INTERNAL}"
+    depends_on:
+      - postgres
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - my_network
+    restart: always
+
+networks:
+  my_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  pgadmin_data:
