@@ -1,0 +1,421 @@
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"INFO","msg":"Logger Slog configured.","file_name":"logger_slog.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"INFO","msg":"Logger Slog configured.","file_name":"logger_slog.go","post":8765}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"INFO","log_file_name":"board-game.log","log_terminal":"false"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"INFO","log_file_name":"board-game.log","log_terminal":"false"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"INFO","log_file_name":"board-game.log","log_terminal":"false"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"INFO","log_file_name":"board-game.log","log_terminal":"false"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"INFO","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"INFO","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Building health data.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Encoding health data.","file_name":"health_controller.go","class":"HealthController","!BADKEY":{"database":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","service":"Healthy","timestamp":"2026-02-28T12:40:56.560728-06:00"}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"file does not exist"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Attempting to get database connection.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currenly open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Retrieve credentials from environment variables.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"TRACE","msg":"Get postgres drive instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"ERROR","msg":"Failed to get postges instance while getting migrate.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"dial tcp: lookup board-game-postgres: no such host"}
+{"sev":"ERROR","msg":"Failed to get migrate while migrating steps","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"dial tcp: lookup board-game-postgres: no such host"}
+{"sev":"ERROR","msg":"MigrationSteps failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"dial tcp: lookup board-game-postgres: no such host"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"dial tcp: lookup board-game-postgres: no such host"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Attempting to get database connection.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currenly open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Retrieve credentials from environment variables.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=board-game-postgres port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"TRACE","msg":"Get postgres drive instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"ERROR","msg":"Failed to get postges instance while getting migrate.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"dial tcp: lookup board-game-postgres: no such host"}
+{"sev":"ERROR","msg":"Failed to get migrate while migrating steps","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"dial tcp: lookup board-game-postgres: no such host"}
+{"sev":"ERROR","msg":"MigrationSteps failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"dial tcp: lookup board-game-postgres: no such host"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"dial tcp: lookup board-game-postgres: no such host"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Query postgres database for version","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"ERROR","msg":"Failed to select postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"dial tcp: lookup board-game-postgres: no such host"}
+{"sev":"ERROR","msg":"Failed to retrieve database version.","file_name":"health_service.go","class_name":"HealthService","error":"dial tcp: lookup board-game-postgres: no such host"}
+{"sev":"TRACE","msg":"Building health data.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Encoding health data.","file_name":"health_controller.go","class":"HealthController","!BADKEY":{"database":"dial tcp: lookup board-game-postgres: no such host","service":"Healthy","timestamp":"2026-02-28T13:40:58.786068-06:00"}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currenly open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Retrieve credentials from environment variables.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Query postgres database for version","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","verison":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"DEBUG","msg":"Successfully retrieved database version.","file_name":"health_service.go","class_name":"HealthService","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Building health data.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Encoding health data.","file_name":"health_controller.go","class":"HealthController","!BADKEY":{"database":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","service":"Healthy","timestamp":"2026-02-28T13:43:16.482798-06:00"}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Attempting to get database connection.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"TRACE","msg":"Get postgres drive instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Run migration step command.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"ERROR","msg":"Failed to migrate step.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"file does not exist"}
+{"sev":"ERROR","msg":"MigrationSteps failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"file does not exist"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"file does not exist"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Attempting to get database connection.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currenly open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Retrieve credentials from environment variables.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"TRACE","msg":"Get postgres drive instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Run migration step command.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"ERROR","msg":"Failed to migrate step.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"file does not exist"}
+{"sev":"ERROR","msg":"MigrationSteps failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"file does not exist"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"file does not exist"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Attempting to get database connection.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currenly open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Retrieve credentials from environment variables.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"TRACE","msg":"Get postgres drive instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"ERROR","msg":"Failed to get migrate while migrating steps","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"failed to open source, \"file:///Users/ccthomas/Documents/Repositories/board-game/backend/backend/db/migrations\": open .: no such file or directory"}
+{"sev":"ERROR","msg":"MigrationSteps failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"failed to open source, \"file:///Users/ccthomas/Documents/Repositories/board-game/backend/backend/db/migrations\": open .: no such file or directory"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"failed to open source, \"file:///Users/ccthomas/Documents/Repositories/board-game/backend/backend/db/migrations\": open .: no such file or directory"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Attempting to get database connection.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currenly open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Retrieve credentials from environment variables.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"TRACE","msg":"Get postgres drive instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"INFO","msg":"Resolved migrations path.","file_name":"database_postgres.go","class_name":"DatabasePostgres","abs_path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000001_init_game_schema.down.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000001_init_game_schema.up.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000002_create_table_damage_type.down.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000002_create_table_damage_type.up.sql"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Run migration step command.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"ERROR","msg":"Failed to migrate step.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"file does not exist"}
+{"sev":"ERROR","msg":"MigrationSteps failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"file does not exist"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"file does not exist"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Attempting to get database connection.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currenly open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Retrieve credentials from environment variables.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"TRACE","msg":"Get postgres drive instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"INFO","msg":"Resolved migrations path.","file_name":"database_postgres.go","class_name":"DatabasePostgres","abs_path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000001_init_game_schema.down.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000001_init_game_schema.up.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000002_create_table_damage_type.down.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000002_create_table_damage_type.up.sql"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Run migration step command.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Attempting to get database connection.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"TRACE","msg":"Get postgres drive instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"INFO","msg":"Resolved migrations path.","file_name":"database_postgres.go","class_name":"DatabasePostgres","abs_path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000001_init_game_schema.down.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000001_init_game_schema.up.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000002_create_table_damage_type.down.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000002_create_table_damage_type.up.sql"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Run migration step command.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Attempting to get database connection.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"TRACE","msg":"Get postgres drive instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"INFO","msg":"Resolved migrations path.","file_name":"database_postgres.go","class_name":"DatabasePostgres","abs_path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000001_init_game_schema.down.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000001_init_game_schema.up.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000002_create_table_damage_type.down.sql"}
+{"sev":"INFO","msg":"Migration file found.","file_name":"database_postgres.go","class_name":"DatabasePostgres","file":"000002_create_table_damage_type.up.sql"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Run migration step command.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Query postgres database for version","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","verison":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"DEBUG","msg":"Successfully retrieved database version.","file_name":"health_service.go","class_name":"HealthService","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Building health data.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Encoding health data.","file_name":"health_controller.go","class":"HealthController","!BADKEY":{"database":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","service":"Healthy","timestamp":"2026-02-28T13:54:39.324384-06:00"}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Query postgres database for version","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","verison":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"DEBUG","msg":"Successfully retrieved database version.","file_name":"health_service.go","class_name":"HealthService","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Building health data.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Encoding health data.","file_name":"health_controller.go","class":"HealthController","!BADKEY":{"database":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","service":"Healthy","timestamp":"2026-02-28T13:56:27.433574-06:00"}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Query postgres database for version","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","verison":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"DEBUG","msg":"Successfully retrieved database version.","file_name":"health_service.go","class_name":"HealthService","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Building health data.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Encoding health data.","file_name":"health_controller.go","class":"HealthController","!BADKEY":{"database":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","service":"Healthy","timestamp":"2026-02-28T13:56:28.103549-06:00"}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Query postgres database for version","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","verison":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"DEBUG","msg":"Successfully retrieved database version.","file_name":"health_service.go","class_name":"HealthService","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Building health data.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Encoding health data.","file_name":"health_controller.go","class":"HealthController","!BADKEY":{"database":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","service":"Healthy","timestamp":"2026-02-28T13:56:28.511762-06:00"}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Query postgres database for version","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","verison":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"DEBUG","msg":"Successfully retrieved database version.","file_name":"health_service.go","class_name":"HealthService","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Building health data.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Encoding health data.","file_name":"health_controller.go","class":"HealthController","!BADKEY":{"database":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","service":"Healthy","timestamp":"2026-02-28T13:56:29.336672-06:00"}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}

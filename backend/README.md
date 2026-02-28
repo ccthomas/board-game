@@ -7,3 +7,12 @@ If running from CLI, we need environment configs fron `.env`. The file is howeve
 ```
 go run . "../local/.env" "../local/.env.cli
 ```
+
+## Testing
+
+Run the following command to install Uber's mocking tool (Mac)
+```cmd
+go install go.uber.org/mock/mockgen@latest 
+
+export PATH=$PATH:$(go env GOPATH)/bin 
+```             

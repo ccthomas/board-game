@@ -1,0 +1,91 @@
+{
+  "v": 11,
+  "name": "Board Game",
+  "folders": [
+    {
+      "v": 11,
+      "name": "Health",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "endpoint": "<<api>>/health",
+          "name": "Health API",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    },
+    {
+      "v": 11,
+      "name": "Configuration",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "endpoint": "<<api>>/configuration/database/migrations/",
+          "name": "Run Migrations",
+          "params": [],
+          "headers": [],
+          "method": "POST",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  // up|down\n  \"command\": \"up\",\n  // optional - if omitted, run all\n  \"quantity\": 1\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    }
+  ],
+  "requests": [],
+  "headers": [],
+  "auth": {
+    "authType": "none",
+    "authActive": true
+  },
+  "variables": [
+    {
+      "key": "api",
+      "currentValue": "",
+      "initialValue": "localhost:80/api",
+      "secret": false
+    }
+  ],
+  "description": ""
+}

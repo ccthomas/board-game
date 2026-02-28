@@ -12,4 +12,4 @@ docker run --rm -v $(pwd)/backend/db/migrations:/migrations migrate/migrate \
 
 ## Run Migrations
 
-You can currently run migrations by running the backend go application. There are other ways using go/migrate locally or docker commands to run migrations as well. Not documented here.
+Call the configuration database migration apis to run migrations. You can find documentation on the APIs under the TECHINICAL-API-DESIGN.md document. Look for the Configuration APIs for details on migrations

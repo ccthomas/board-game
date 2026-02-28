@@ -1,0 +1,35 @@
+{
+  // Go-specific editor settings
+  "[go]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.stickyScroll.enabled": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+      "source.fixAll": "always"
+    }
+  },
+  // Go extension specific settings
+  "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true, // This setting might be deprecated soon as gopls is the default
+  "gopls": {
+    "formatting.gofumpt": true,
+    "usePlaceholders": true,
+    "ui.semanticTokens": true,
+    "staticcheck": true // Recommended to keep enabled for static analysis
+  },
+  "go.lintTool": "golangci-lint", // A popular and fast linter
+  "go.lintFlags": [
+    "--fast"
+  ],
+  "go.enableCodeLens": {
+    "runtest": true
+  },
+  // Enhanced inlay hints (optional, provides extra context in code)
+  "go.inlayHints.compositeLiteralFields": true,
+  "go.inlayHints.compositeLiteralTypes": true,
+  "go.inlayHints.functionTypeParameters": true,
+  "go.inlayHints.parameterNames": true,
+  "go.inlayHints.variableTypes": true
+}

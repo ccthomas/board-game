@@ -1,0 +1,84 @@
+// HAD PROBLEMS WITH GO 1.17 BEING DECTECTED ALTHOUGH PROJECT IS 1.26.0 AND LOCAL GO IS ALSO OF SAME VERSION
+// package logger
+
+// import (
+// 	"io"
+// 	"os"
+
+// 	"github.com/sirupsen/logrus"
+// )
+
+// type LoggerLogrus struct {
+// 	entry *logrus.Entry
+// }
+
+// func NewLoggerLogrus() *LoggerLogrus {
+// 	log := logrus.New()
+
+// 	// Log as JSON instead of the default ASCII formatter.
+// 	log.SetFormatter(&logrus.TextFormatter{FullTimestamp: true})
+
+// 	// Output to stdout instead of the default stderr
+// 	// Can be any io.Writer, see below for File example
+// 	log.SetOutput(os.Stdout)
+
+// 	// Only log the warning severity or above.
+// 	logLevelStr := os.Getenv("LOGRUS_LOG_LEVEL")
+// 	logLevel := logrus.ErrorLevel
+// 	if logLevelStr != "" {
+// 		var err error
+// 		logLevel, err = logrus.ParseLevel(logLevelStr)
+// 		if err != nil {
+// 			panic("invalid environment variable value set for 'LOGRUS_LOG_LEVEL': " + logLevelStr)
+// 		}
+// 	}
+
+// 	log.SetLevel(logLevel)
+
+// 	// Configure Logger.
+// 	logFileName := os.Getenv("LOGRUS_LOG_FILE_NAME")
+// 	if logFileName == "" {
+// 		logFileName = "logfile.log"
+// 	}
+
+// 	file, err := os.OpenFile(logFileName, os.O_CREATE|os.O_APPEND|os.O_WRONLY, 0666)
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	}
+
+// 	// Configure if we should log to terminal.
+// 	if os.Getenv("LOGRUS_LOG_TO_TERMINAL") == "true" {
+// 		multi := io.MultiWriter(file, os.Stdout)
+// 		log.SetOutput(multi)
+// 	}
+
+// 	return &LoggerLogrus{
+// 		entry: logrus.NewEntry(log),
+// 	}
+// }
+
+// func (l *LoggerLogrus) WithFields(fields Fields) Logger {
+// 	return &LoggerLogrus{
+// 		entry: l.entry.WithFields(logrus.Fields(fields)),
+// 	}
+// }
+
+// func (l *LoggerLogrus) Debug(args ...interface{}) {
+// 	l.entry.Debug(args...)
+// }
+
+// func (l *LoggerLogrus) Info(args ...interface{}) {
+// 	l.entry.Info(args...)
+// }
+
+// func (l *LoggerLogrus) Error(args ...interface{}) {
+// 	l.entry.Error(args...)
+// }
+
+// func (l *LoggerLogrus) Errorf(format string, args ...interface{}) {
+// 	l.entry.Errorf(format, args...)
+// }
+
+// func (l *LoggerLogrus) Trace(args ...interface{}) {
+// 	l.entry.Trace(args...)
+// }

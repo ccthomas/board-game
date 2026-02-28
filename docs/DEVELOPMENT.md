@@ -2,15 +2,16 @@
 
 ## Getting Started
 
-To run the Board Game Application, you only need [Docker](https://www.docker.com). Our local development docker compose has PGAdmin & Postman, so no need to install development tools.
+To run the Board Game Application, you only need [Docker](https://www.docker.com). Our local development docker compose has PGAdmin. The only development tool that must be installed is Hoppscotch. Although any API calling tool, including cli curl commands, are acceptable
 
 If you'd like to run things locally, you will need the following
 * [Go](https://go.dev) - Backend Service(s)
 * [NodeJs](https://nodejs.org/en) - Front End Application
     * Recommended to use [NVM](https://github.com/nvm-sh/nvm)
-* [PGAdmin](https://www.pgadmin.org) -  administration and development platform for PostgreSQL
+* [PGAdmin](https://www.pgadmin.org) - administration and development platform for PostgreSQL
 * [Postgres](https://www.postgresql.org) - SQL Database
-* [Postman](https://www.postman.com/downloads/) - API platform for developers to design, build, test, and collaborate on APIs.
+* [Hoppscotch](https://hoppscotch.com/download) - makes it easy to create and test your APIs, helping you to ship products faster.
+    * NOTE: Postman logs all API transactions in their cloud. For this reason, we have gone with Hoppscotch as an alternitive.
 
 ## Usage
 
@@ -35,6 +36,10 @@ Register a new server and fill in the following information
     * Password: DB_PASSWORD
 
 Look to `docs/DATABASE.md` for usage around creating & running migrations.
+
+### API
+
+Download [Hoppscotch] and open the `Board Game Hoppscotch Collection.json` file. Here you can call all the exposed apis.
 
 ### Helpful Commands
 
