@@ -34,13 +34,6 @@ func NewConfigurationServiceImpl(logger l.Logger, database d.Database) *Configur
 func (s *ConfigurationServiceImpl) RunDatabaseMigration(config *m.MigrationConfiguration) error {
 	s.logger.Debug("RunDatabaseMigration invoked.")
 
-	s.logger.Trace("Attempting to get database connection.")
-	db, err := s.database.GetConnection()
-	if err != nil {
-		s.logger.Error("Failed to get database connection.", "error", err.Error())
-		return err
-	}
-
 	s.logger.Trace("Evaluating migration command.",
 		"command", config.Command,
 		"quantity", config.Quantity,
@@ -52,10 +45,10 @@ func (s *ConfigurationServiceImpl) RunDatabaseMigration(config *m.MigrationConfi
 		s.logger.Debug("Executing MigrationDown command.")
 
 		if config.Quantity == nil {
-			s.logger.Trace("Running full MigrationUp (no quantity provided).")
+			s.logger.Trace("Running full MigrationDown (no quantity provided).")
 
-			if err := s.database.MigrationUp(db); err != nil {
-				s.logger.Error("MigrationUp failed.", "error", err.Error())
+			if _, err := s.database.MigrationDown(); err != nil {
+				s.logger.Error("MigrationDown failed.", "error", err.Error())
 				return err
 			}
 
@@ -66,7 +59,7 @@ func (s *ConfigurationServiceImpl) RunDatabaseMigration(config *m.MigrationConfi
 				"steps", steps,
 			)
 
-			if err := s.database.MigrationSteps(db, steps); err != nil {
+			if _, err := s.database.MigrationSteps(steps); err != nil {
 				s.logger.Error("MigrationSteps failed.", "error", err.Error())
 				return err
 			}
@@ -76,10 +69,10 @@ func (s *ConfigurationServiceImpl) RunDatabaseMigration(config *m.MigrationConfi
 		s.logger.Debug("Executing MigrationUp command.")
 
 		if config.Quantity == nil {
-			s.logger.Trace("Running full MigrationDown (no quantity provided).")
+			s.logger.Trace("Running full MigrationUp (no quantity provided).")
 
-			if err := s.database.MigrationDown(db); err != nil {
-				s.logger.Error("MigrationDown failed.", "error", err.Error())
+			if _, err := s.database.MigrationUp(); err != nil {
+				s.logger.Error("MigrationUp failed.", "error", err.Error())
 				return err
 			}
 
@@ -90,7 +83,7 @@ func (s *ConfigurationServiceImpl) RunDatabaseMigration(config *m.MigrationConfi
 				"steps", steps,
 			)
 
-			if err := s.database.MigrationSteps(db, steps); err != nil {
+			if _, err := s.database.MigrationSteps(steps); err != nil {
 				s.logger.Error("MigrationSteps failed.", "error", err.Error())
 				return err
 			}

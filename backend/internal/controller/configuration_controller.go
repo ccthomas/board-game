@@ -3,6 +3,7 @@ package controller
 
 import (
 	"encoding/json"
+	"errors"
 	"net/http"
 
 	l "github.com/ccthomas/board-game/internal/logger"
@@ -55,14 +56,28 @@ func (c *ConfigurationController) RunDatabaseMigration(w http.ResponseWriter, r 
 	if err != nil {
 		c.logger.Error("Failed to run database migration:", "error", err.Error())
 
-		http.Error(w,
-			http.StatusText(http.StatusInternalServerError),
-			http.StatusInternalServerError,
-		)
+		if badReqErr, ok := errors.AsType[*m.BadMigrationCommandRequestError](err); ok {
+			http.Error(w,
+				http.StatusText(http.StatusUnprocessableEntity),
+				http.StatusUnprocessableEntity,
+			)
+
+			w.Header().Set("Content-Type", "application/json")
+			if err := json.NewEncoder(w).Encode(badReqErr.Error()); err != nil {
+				c.logger.Error("Failed to encode health data.", "error", err.Error())
+				http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
+			}
+
+		} else {
+			http.Error(w,
+				http.StatusText(http.StatusInternalServerError),
+				http.StatusInternalServerError,
+			)
+		}
+
 		return
 	}
 
-	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	c.logger.Debug("Completed Run Database Migration endpoint.")
 }

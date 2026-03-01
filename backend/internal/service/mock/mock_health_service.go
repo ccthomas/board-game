@@ -12,6 +12,7 @@ package mock_service
 import (
 	reflect "reflect"
 
+	model "github.com/ccthomas/board-game/internal/model"
 	gomock "go.uber.org/mock/gomock"
 )
 
@@ -39,16 +40,16 @@ func (m *MockHealthService) EXPECT() *MockHealthServiceMockRecorder {
 	return m.recorder
 }
 
-// GetDatabaseVersion mocks base method.
-func (m *MockHealthService) GetDatabaseVersion() string {
+// GetDatabaseHealth mocks base method.
+func (m *MockHealthService) GetDatabaseHealth() model.DatabaseHealth {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetDatabaseVersion")
-	ret0, _ := ret[0].(string)
+	ret := m.ctrl.Call(m, "GetDatabaseHealth")
+	ret0, _ := ret[0].(model.DatabaseHealth)
 	return ret0
 }
 
-// GetDatabaseVersion indicates an expected call of GetDatabaseVersion.
-func (mr *MockHealthServiceMockRecorder) GetDatabaseVersion() *gomock.Call {
+// GetDatabaseHealth indicates an expected call of GetDatabaseHealth.
+func (mr *MockHealthServiceMockRecorder) GetDatabaseHealth() *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatabaseVersion", reflect.TypeOf((*MockHealthService)(nil).GetDatabaseVersion))
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetDatabaseHealth", reflect.TypeOf((*MockHealthService)(nil).GetDatabaseHealth))
 }

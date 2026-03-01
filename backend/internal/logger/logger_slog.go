@@ -25,9 +25,11 @@ type LoggerSlog struct {
 }
 
 func NewLoggerSlog() (*LoggerSlog, error) {
-	logLevel := LevelError
+	var logLevel slog.Level
 	levelStr := os.Getenv("LOG_LEVEL")
 	switch levelStr {
+	case "":
+		logLevel = LevelInfo
 	case "TRACE":
 		logLevel = LevelTrace
 	case "NOTICE":

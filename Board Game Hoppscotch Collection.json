@@ -44,7 +44,7 @@
       "requests": [
         {
           "v": "17",
-          "endpoint": "<<api>>/configuration/database/migrations/",
+          "endpoint": "<<api>>/configuration/database/migrations",
           "name": "Run Migrations",
           "params": [],
           "headers": [],
@@ -57,7 +57,105 @@
           "testScript": "",
           "body": {
             "contentType": "application/json",
-            "body": "{\n  // up|down\n  \"command\": \"up\",\n  // optional - if omitted, run all\n  \"quantity\": 1\n}"
+            "body": "{\n  // up|down\n  \"command\": \"up\",\n  // optional - if omitted, run all\n  // \"quantity\": 1\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
+    },
+    {
+      "v": 11,
+      "name": "Damage Type",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "endpoint": "<<api>>/damage-type",
+          "name": "Get Damage Types",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "endpoint": "<<api>>/damage-type/<<damage_type_id>>",
+          "name": "Get Damage Type By Id",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "endpoint": "<<api>>/damage-type",
+          "name": "Save Damage Type",
+          "params": [],
+          "headers": [],
+          "method": "POST",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"<<$randomColor>>\",\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "endpoint": "<<api>>/damage-type/<<damage_type_id>>",
+          "name": "Delete Damage Type By Id",
+          "params": [],
+          "headers": [],
+          "method": "DELETE",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
           },
           "requestVariables": [],
           "responses": {},
@@ -84,6 +182,12 @@
       "key": "api",
       "currentValue": "",
       "initialValue": "localhost:80/api",
+      "secret": false
+    },
+    {
+      "key": "damage_type_id",
+      "currentValue": "",
+      "initialValue": "",
       "secret": false
     }
   ],

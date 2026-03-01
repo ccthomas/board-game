@@ -7,6 +7,7 @@ import (
 	"time"
 
 	l "github.com/ccthomas/board-game/internal/logger"
+	"github.com/ccthomas/board-game/internal/model"
 	s "github.com/ccthomas/board-game/internal/service"
 	"github.com/gorilla/mux"
 )
@@ -33,28 +34,48 @@ func (c HealthController) HandleSubrouter(r *mux.Router) {
 	router.HandleFunc("", c.GetHealth).Methods("GET")
 }
 
+// func (c *HealthController) GetHealth(w http.ResponseWriter, r *http.Request) {
+// 	c.logger.Debug("Get Health endpoint hit.")
+// 	dbHealth := c.healthService.GetDatabaseHealth()
+
+// 	c.logger.Trace("Building health data.")
+// 	currentTime := time.Now()
+// 	data := map[string]interface{}{
+// 		"service":   "Healthy",
+// 		"database":  dbHealth,
+// 		"timestamp": currentTime,
+// 	}
+
+// 	w.Header().Set("Content-Type", "application/json")
+// 	w.WriteHeader(http.StatusOK)
+
+// 	c.logger.Trace("Encoding health data.", data)
+// 	if err := json.NewEncoder(w).Encode(data); err != nil {
+// 		c.logger.Error("Failed to encode health data.", data)
+// 		http.Error(w,
+// 			http.StatusText(http.StatusInternalServerError),
+// 			http.StatusInternalServerError,
+// 		)
+// 	}
+
+// 	c.logger.Debug("Completed Get Health endpoint.")
+// }
+
 func (c *HealthController) GetHealth(w http.ResponseWriter, r *http.Request) {
 	c.logger.Debug("Get Health endpoint hit.")
-	databaseVersionOrError := c.healthService.GetDatabaseVersion()
 
-	c.logger.Trace("Building health data.")
-	currentTime := time.Now()
-	data := map[string]interface{}{
-		"service":   "Healthy",
-		"database":  databaseVersionOrError,
-		"timestamp": currentTime,
+	data := model.HealthResponse{
+		Service:   "Healthy",
+		Database:  c.healthService.GetDatabaseHealth(),
+		Timestamp: time.Now(),
 	}
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 
-	c.logger.Trace("Encoding health data.", data)
 	if err := json.NewEncoder(w).Encode(data); err != nil {
-		c.logger.Error("Failed to encode health data.", data)
-		http.Error(w,
-			http.StatusText(http.StatusInternalServerError),
-			http.StatusInternalServerError,
-		)
+		c.logger.Error("Failed to encode health data.", "error", err.Error())
+		http.Error(w, http.StatusText(http.StatusInternalServerError), http.StatusInternalServerError)
 	}
 
 	c.logger.Debug("Completed Get Health endpoint.")

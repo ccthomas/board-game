@@ -8,6 +8,7 @@ import (
 	c "github.com/ccthomas/board-game/internal/controller"
 	d "github.com/ccthomas/board-game/internal/database"
 	l "github.com/ccthomas/board-game/internal/logger"
+	"github.com/ccthomas/board-game/internal/repository"
 	s "github.com/ccthomas/board-game/internal/service"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
@@ -52,10 +53,17 @@ func main() {
 	database := d.NewDatabasePostgres(logger)
 
 	// -------------------------
+	// Repository
+	// -------------------------
+	mainLogger.Debug("Configuring databases...")
+	damageTypeRepo := repository.NewDamageTypeRepositoryPostgres(logger, database)
+
+	// -------------------------
 	// Services
 	// -------------------------
 	mainLogger.Debug("Configuring services...")
 	configurationService := s.NewConfigurationServiceImpl(logger, database)
+	damageTypeService := s.NewDamageTypeServiceImpl(logger, damageTypeRepo)
 	healthService := s.NewHealthServiceImpl(logger, database)
 
 	// -------------------------
@@ -63,6 +71,7 @@ func main() {
 	// -------------------------
 	mainLogger.Debug("Configuring controllers...")
 	configurationController := c.NewConfigurationController(logger, configurationService)
+	damageTypeController := c.NewDamageTypeController(logger, damageTypeService)
 	healthController := c.NewHealthController(logger, healthService)
 
 	// -------------------------
@@ -73,6 +82,7 @@ func main() {
 	apiRouter := router.PathPrefix("/api").Subrouter()
 
 	healthController.HandleSubrouter(apiRouter)
+	damageTypeController.HandleSubrouter(apiRouter)
 	configurationController.HandleSubrouter(apiRouter)
 
 	// -------------------------

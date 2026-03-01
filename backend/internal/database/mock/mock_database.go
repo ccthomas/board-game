@@ -13,6 +13,7 @@ import (
 	sql "database/sql"
 	reflect "reflect"
 
+	model "github.com/ccthomas/board-game/internal/model"
 	gomock "go.uber.org/mock/gomock"
 )
 
@@ -71,45 +72,63 @@ func (mr *MockDatabaseMockRecorder) GetConnection() *gomock.Call {
 }
 
 // MigrationDown mocks base method.
-func (m *MockDatabase) MigrationDown(db *sql.DB) error {
+func (m *MockDatabase) MigrationDown() (*model.MigrationStatus, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "MigrationDown", db)
-	ret0, _ := ret[0].(error)
-	return ret0
+	ret := m.ctrl.Call(m, "MigrationDown")
+	ret0, _ := ret[0].(*model.MigrationStatus)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
 }
 
 // MigrationDown indicates an expected call of MigrationDown.
-func (mr *MockDatabaseMockRecorder) MigrationDown(db any) *gomock.Call {
+func (mr *MockDatabaseMockRecorder) MigrationDown() *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MigrationDown", reflect.TypeOf((*MockDatabase)(nil).MigrationDown), db)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MigrationDown", reflect.TypeOf((*MockDatabase)(nil).MigrationDown))
+}
+
+// MigrationStatus mocks base method.
+func (m *MockDatabase) MigrationStatus() (*model.MigrationStatus, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "MigrationStatus")
+	ret0, _ := ret[0].(*model.MigrationStatus)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// MigrationStatus indicates an expected call of MigrationStatus.
+func (mr *MockDatabaseMockRecorder) MigrationStatus() *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MigrationStatus", reflect.TypeOf((*MockDatabase)(nil).MigrationStatus))
 }
 
 // MigrationSteps mocks base method.
-func (m *MockDatabase) MigrationSteps(db *sql.DB, steps int8) error {
+func (m *MockDatabase) MigrationSteps(steps int8) (*model.MigrationStatus, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "MigrationSteps", db, steps)
-	ret0, _ := ret[0].(error)
-	return ret0
+	ret := m.ctrl.Call(m, "MigrationSteps", steps)
+	ret0, _ := ret[0].(*model.MigrationStatus)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
 }
 
 // MigrationSteps indicates an expected call of MigrationSteps.
-func (mr *MockDatabaseMockRecorder) MigrationSteps(db, steps any) *gomock.Call {
+func (mr *MockDatabaseMockRecorder) MigrationSteps(steps any) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MigrationSteps", reflect.TypeOf((*MockDatabase)(nil).MigrationSteps), db, steps)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MigrationSteps", reflect.TypeOf((*MockDatabase)(nil).MigrationSteps), steps)
 }
 
 // MigrationUp mocks base method.
-func (m *MockDatabase) MigrationUp(db *sql.DB) error {
+func (m *MockDatabase) MigrationUp() (*model.MigrationStatus, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "MigrationUp", db)
-	ret0, _ := ret[0].(error)
-	return ret0
+	ret := m.ctrl.Call(m, "MigrationUp")
+	ret0, _ := ret[0].(*model.MigrationStatus)
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
 }
 
 // MigrationUp indicates an expected call of MigrationUp.
-func (mr *MockDatabaseMockRecorder) MigrationUp(db any) *gomock.Call {
+func (mr *MockDatabaseMockRecorder) MigrationUp() *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MigrationUp", reflect.TypeOf((*MockDatabase)(nil).MigrationUp), db)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "MigrationUp", reflect.TypeOf((*MockDatabase)(nil).MigrationUp))
 }
 
 // Version mocks base method.
