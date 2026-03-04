@@ -332,11 +332,11 @@ func TestHandleDamageTypeSubrouter_WiresRoutes(t *testing.T) {
 	// PUT /damage-type
 	mockService.EXPECT().Save(gomock.Any()).Return(&m.DamageType{ID: "fire", Name: "Fire"}, nil)
 	bodyBytes, _ := json.Marshal(m.DamageType{Name: "Fire"})
-	req = httptest.NewRequest(http.MethodPut, "/damage-type", bytes.NewBuffer(bodyBytes))
+	req = httptest.NewRequest(http.MethodPost, "/damage-type", bytes.NewBuffer(bodyBytes))
 	rr = httptest.NewRecorder()
 	router.ServeHTTP(rr, req)
 	if rr.Code != http.StatusOK {
-		t.Fatalf("PUT /damage-type expected %d, got %d", http.StatusOK, rr.Code)
+		t.Fatalf("POST /damage-type expected %d, got %d", http.StatusOK, rr.Code)
 	}
 
 	// DELETE /damage-type/{id}

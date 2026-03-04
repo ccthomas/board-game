@@ -3,6 +3,7 @@ package repository_test
 import (
 	"testing"
 
+	"github.com/google/uuid"
 	_ "github.com/lib/pq"
 
 	"github.com/ccthomas/board-game/internal/helper"
@@ -71,11 +72,11 @@ func TestUpsert_Error(t *testing.T) {
 	helper.CleanTable(t, db.DB, "game.damage_type")
 	repo := newTestRepo(db)
 
-	idGreaterThan36 := "1234567890123456789012345678901234567890" // 40 characters
+	idGreaterThan36 := "invalid-uuid" // 40 characters
 	expected := helper.CreateDamageType(&idGreaterThan36, nil, nil, nil, nil)
 	err := repo.Upsert(expected)
-	if err == nil || err.Error() != "pq: value too long for type character varying(36) (22001)" {
-		t.Fatalf("Expected error \"pq: value too long for type character varying(36)\": %v", err)
+	if err == nil || err.Error() != "pq: invalid input syntax for type uuid: \"invalid-uuid\" (22P02)" {
+		t.Fatalf("Expected error \"pq: invalid input syntax for type uuid: \"invalid-uuid\" (22P02)\": %v", err)
 	}
 }
 
@@ -84,7 +85,7 @@ func TestGetByID_NotFound(t *testing.T) {
 	helper.CleanTable(t, db.DB, "game.damage_type")
 	repo := newTestRepo(db)
 
-	result, err := repo.GetByID("Does Not Exist")
+	result, err := repo.GetByID(uuid.NewString())
 	if err != nil {
 		t.Fatalf("unexpected error: %v", err)
 	}
