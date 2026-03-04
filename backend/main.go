@@ -56,6 +56,7 @@ func main() {
 	// Repository
 	// -------------------------
 	mainLogger.Debug("Configuring databases...")
+	abilityRepo := repository.NewAbilityRepositoryPostgres(logger, database)
 	damageTypeRepo := repository.NewDamageTypeRepositoryPostgres(logger, database)
 
 	// -------------------------
@@ -66,11 +67,18 @@ func main() {
 	damageTypeService := s.NewDamageTypeServiceImpl(logger, damageTypeRepo)
 	healthService := s.NewHealthServiceImpl(logger, database)
 
+	abilityService := s.NewAbilityServiceImpl(
+		logger,
+		abilityRepo,
+		damageTypeService,
+	)
+
 	// -------------------------
 	// Controllers
 	// -------------------------
 	mainLogger.Debug("Configuring controllers...")
 	configurationController := c.NewConfigurationController(logger, configurationService)
+	abilityController := c.NewAbilityController(logger, abilityService)
 	damageTypeController := c.NewDamageTypeController(logger, damageTypeService)
 	healthController := c.NewHealthController(logger, healthService)
 
@@ -81,6 +89,7 @@ func main() {
 	router := mux.NewRouter()
 	apiRouter := router.PathPrefix("/api").Subrouter()
 
+	abilityController.HandleSubrouter(apiRouter)
 	healthController.HandleSubrouter(apiRouter)
 	damageTypeController.HandleSubrouter(apiRouter)
 	configurationController.HandleSubrouter(apiRouter)

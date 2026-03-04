@@ -329,7 +329,7 @@ func TestHandleDamageTypeSubrouter_WiresRoutes(t *testing.T) {
 		t.Fatalf("GET /damage-type/fire expected %d, got %d", http.StatusOK, rr.Code)
 	}
 
-	// PUT /damage-type
+	// POST /damage-type
 	mockService.EXPECT().Save(gomock.Any()).Return(&m.DamageType{ID: "fire", Name: "Fire"}, nil)
 	bodyBytes, _ := json.Marshal(m.DamageType{Name: "Fire"})
 	req = httptest.NewRequest(http.MethodPost, "/damage-type", bytes.NewBuffer(bodyBytes))

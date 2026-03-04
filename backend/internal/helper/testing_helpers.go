@@ -249,3 +249,147 @@ func SuppressLogs() {
 	os.Setenv("LOG_TO_TERMINAL", "false")
 	os.Setenv("LOG_FILE_NAME", os.DevNull)
 }
+
+func CreateAbility(id *string, name *string, pattern *model.TargetingPattern, rangeVal *int, deletedAt *time.Time) model.Ability {
+	defaultID := uuid.New().String()
+	defaultName := uuid.New().String()
+	defaultPattern := model.TargetAdjacent
+	defaultRange := 1
+	now := time.Now()
+	defaultCreatedAt := now.Add(-3 * time.Second)
+	defaultUpdatedAt := now.Add(-2 * time.Second)
+	defaultDeletedAt := now.Add(-1 * time.Second)
+
+	a := model.Ability{
+		ID:        defaultID,
+		Name:      defaultName,
+		Pattern:   defaultPattern,
+		Range:     defaultRange,
+		CreatedAt: &defaultCreatedAt,
+		UpdatedAt: &defaultUpdatedAt,
+		DeletedAt: &defaultDeletedAt,
+		Effects:   []model.AbilityEffect{},
+	}
+
+	if id != nil {
+		a.ID = *id
+	}
+	if name != nil {
+		a.Name = *name
+	}
+	if pattern != nil {
+		a.Pattern = *pattern
+	}
+	if rangeVal != nil {
+		a.Range = *rangeVal
+	}
+	if deletedAt != nil {
+		a.DeletedAt = deletedAt
+	}
+
+	return a
+}
+
+func AssertAbility(t *testing.T, expected *model.Ability, actual *model.Ability) {
+	t.Helper()
+	if actual == nil {
+		t.Fatal("expected ability, got nil")
+	}
+	if actual.ID != expected.ID {
+		t.Fatalf("expected id to equal expected: \"%s\" actual: \"%s\"", expected.ID, actual.ID)
+	}
+	if actual.Name != expected.Name {
+		t.Fatalf("expected name to equal expected: \"%s\" actual: \"%s\"", expected.Name, actual.Name)
+	}
+	if actual.Pattern != expected.Pattern {
+		t.Fatalf("expected pattern to equal expected: \"%s\" actual: \"%s\"", expected.Pattern, actual.Pattern)
+	}
+	if actual.Range != expected.Range {
+		t.Fatalf("expected range to equal expected: \"%d\" actual: \"%d\"", expected.Range, actual.Range)
+	}
+
+	AssertTimeEqual(t, "created_at", expected.CreatedAt, actual.CreatedAt)
+	AssertTimeEqual(t, "updated_at", expected.UpdatedAt, actual.UpdatedAt)
+	AssertTimeEqual(t, "deleted_at", expected.DeletedAt, actual.DeletedAt)
+}
+
+func CreateAbilityEffect(id *string, abilityID *string, effectType *model.EffectType, alignment *model.TargetAlignment, damageTypeID *string, deletedAt *time.Time) model.AbilityEffect {
+	defaultID := uuid.New().String()
+	defaultAbilityID := uuid.New().String()
+	defaultEffectType := model.Damage
+	defaultAlignment := model.AlignAlly
+	defaultDamageTypeID := uuid.New().String()
+	defaultExpression := model.DiceExpression{NumDice: 2, DieType: model.D6, Modifier: 0}
+	now := time.Now()
+	defaultCreatedAt := now.Add(-3 * time.Second)
+	defaultUpdatedAt := now.Add(-2 * time.Second)
+	defaultDeletedAt := now.Add(-1 * time.Second)
+
+	e := model.AbilityEffect{
+		ID:           defaultID,
+		AbilityID:    defaultAbilityID,
+		EffectType:   defaultEffectType,
+		Alignment:    defaultAlignment,
+		DamageTypeID: defaultDamageTypeID,
+		Expression:   defaultExpression,
+		CreatedAt:    &defaultCreatedAt,
+		UpdatedAt:    &defaultUpdatedAt,
+		DeletedAt:    &defaultDeletedAt,
+	}
+
+	if id != nil {
+		e.ID = *id
+	}
+	if abilityID != nil {
+		e.AbilityID = *abilityID
+	}
+	if effectType != nil {
+		e.EffectType = *effectType
+	}
+	if alignment != nil {
+		e.Alignment = *alignment
+	}
+	if damageTypeID != nil {
+		e.DamageTypeID = *damageTypeID
+	}
+	if deletedAt != nil {
+		e.DeletedAt = deletedAt
+	}
+
+	return e
+}
+
+func AssertAbilityEffect(t *testing.T, expected *model.AbilityEffect, actual *model.AbilityEffect) {
+	t.Helper()
+	if actual == nil {
+		t.Fatal("expected ability effect, got nil")
+	}
+	if actual.ID != expected.ID {
+		t.Fatalf("expected id to equal expected: \"%s\" actual: \"%s\"", expected.ID, actual.ID)
+	}
+	if actual.AbilityID != expected.AbilityID {
+		t.Fatalf("expected ability_id to equal expected: \"%s\" actual: \"%s\"", expected.AbilityID, actual.AbilityID)
+	}
+	if actual.EffectType != expected.EffectType {
+		t.Fatalf("expected effect_type to equal expected: \"%s\" actual: \"%s\"", expected.EffectType, actual.EffectType)
+	}
+	if actual.Alignment != expected.Alignment {
+		t.Fatalf("expected alignment to equal expected: \"%s\" actual: \"%s\"", expected.Alignment, actual.Alignment)
+	}
+	if actual.DamageTypeID != expected.DamageTypeID {
+		t.Fatalf("expected damage_type_id to equal expected: \"%s\" actual: \"%s\"", expected.DamageTypeID, actual.DamageTypeID)
+	}
+	if actual.Expression.NumDice != expected.Expression.NumDice {
+		t.Fatalf("expected expression.num_dice to equal expected: \"%d\" actual: \"%d\"", expected.Expression.NumDice, actual.Expression.NumDice)
+	}
+	if actual.Expression.DieType != expected.Expression.DieType {
+		t.Fatalf("expected expression.die_type to equal expected: \"%d\" actual: \"%d\"", expected.Expression.DieType, actual.Expression.DieType)
+	}
+	if actual.Expression.Modifier != expected.Expression.Modifier {
+		t.Fatalf("expected expression.modifier to equal expected: \"%d\" actual: \"%d\"", expected.Expression.Modifier, actual.Expression.Modifier)
+	}
+
+	AssertTimeEqual(t, "created_at", expected.CreatedAt, actual.CreatedAt)
+	AssertTimeEqual(t, "updated_at", expected.UpdatedAt, actual.UpdatedAt)
+	AssertTimeEqual(t, "deleted_at", expected.DeletedAt, actual.DeletedAt)
+}

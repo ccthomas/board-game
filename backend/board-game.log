@@ -1,0 +1,1045 @@
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle POST /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle DELETE /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currently open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationUp (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Add postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate up.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"migration failed: syntax error at or near \"CREATE\" (column 1) in line 21: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n)\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    ability_id uuid COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id character varying(36) COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n)\n\nTABLESPACE pg_default;\n\nALTER TABLE IF EXISTS game.ability_effect\n    OWNER to admin; (details: pq: syntax error at or near \"CREATE\" at position 21:1 (42601))"}
+{"sev":"ERROR","msg":"MigrationUp failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"migration failed: syntax error at or near \"CREATE\" (column 1) in line 21: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n)\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    ability_id uuid COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id character varying(36) COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n)\n\nTABLESPACE pg_default;\n\nALTER TABLE IF EXISTS game.ability_effect\n    OWNER to admin; (details: pq: syntax error at or near \"CREATE\" at position 21:1 (42601))"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"migration failed: syntax error at or near \"CREATE\" (column 1) in line 21: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n)\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    ability_id uuid COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id character varying(36) COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n)\n\nTABLESPACE pg_default;\n\nALTER TABLE IF EXISTS game.ability_effect\n    OWNER to admin; (details: pq: syntax error at or near \"CREATE\" at position 21:1 (42601))"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle POST /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle DELETE /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationUp (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Add postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currently open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"DEBUG","msg":"No pending migrations, skipping up.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationDown (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Remove postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate down.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"MigrationDown failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"Dirty database version 4. Fix and force version."}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationDown (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Remove postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate down.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"MigrationDown failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"Dirty database version 4. Fix and force version."}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationUp (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Add postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"DEBUG","msg":"No pending migrations, skipping up.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationUp (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Add postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate up.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"migration failed: syntax error at or near \"CREATE\" (column 1) in line 21: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n)\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    ability_id uuid COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id character varying(36) COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n)\n (details: pq: syntax error at or near \"CREATE\" at position 21:1 (42601))"}
+{"sev":"ERROR","msg":"MigrationUp failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"migration failed: syntax error at or near \"CREATE\" (column 1) in line 21: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n)\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    ability_id uuid COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id character varying(36) COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n)\n (details: pq: syntax error at or near \"CREATE\" at position 21:1 (42601))"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"migration failed: syntax error at or near \"CREATE\" (column 1) in line 21: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n)\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id uuid NOT NULL DEFAULT gen_random_uuid(),\n    ability_id uuid COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id character varying(36) COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n)\n (details: pq: syntax error at or near \"CREATE\" at position 21:1 (42601))"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationDown (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Remove postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate down.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"MigrationDown failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"Dirty database version 4. Fix and force version."}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationDown (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Remove postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate down.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"MigrationDown failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"Dirty database version 4. Fix and force version."}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationDown (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Remove postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate down.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"MigrationDown failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"Dirty database version 4. Fix and force version."}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationDown (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Remove postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate down.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"MigrationDown failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"Dirty database version 4. Fix and force version."}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle POST /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle DELETE /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currently open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationDown (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Remove postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate down.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"MigrationDown failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"Dirty database version 4. Fix and force version."}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":null}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running full MigrationDown (no quantity provided).","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Remove postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":0,"latest_version":4,"pending":4,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":1,"latest_version":4,"pending":3,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":1,"latest_version":4,"pending":3,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":2,"latest_version":4,"pending":2,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":2,"latest_version":4,"pending":2,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate step.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"migration failed: syntax error at or near \"CREATE\" (column 1) in line 21: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n)\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    ability_id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id UUID COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n) (details: pq: syntax error at or near \"CREATE\" at position 21:1 (42601))"}
+{"sev":"ERROR","msg":"MigrationSteps failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"migration failed: syntax error at or near \"CREATE\" (column 1) in line 21: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n)\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    ability_id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id UUID COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n) (details: pq: syntax error at or near \"CREATE\" at position 21:1 (42601))"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"migration failed: syntax error at or near \"CREATE\" (column 1) in line 21: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n)\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    ability_id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id UUID COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n) (details: pq: syntax error at or near \"CREATE\" at position 21:1 (42601))"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":true}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate step.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"MigrationSteps failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"Dirty database version 4. Fix and force version."}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"Dirty database version 4. Fix and force version."}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"ERROR","msg":"Failed to migrate step.","file_name":"database_postgres.go","class_name":"DatabasePostgres","error":"migration failed: collations are not supported by type uuid (column 13) in line 7: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n);\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    ability_id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id UUID COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n); (details: pq: collations are not supported by type uuid at position 7:13 (42804))"}
+{"sev":"ERROR","msg":"MigrationSteps failed.","file_name":"configuration_service.go","class_name":"ConfigurationService","error":"migration failed: collations are not supported by type uuid (column 13) in line 7: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n);\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    ability_id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id UUID COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n); (details: pq: collations are not supported by type uuid at position 7:13 (42804))"}
+{"sev":"ERROR","msg":"Failed to run database migration:","file_name":"configuration_controller.go","class":"ConfigurationController","error":"migration failed: collations are not supported by type uuid (column 13) in line 7: -- Table: game.ability\n\n-- DROP TABLE IF EXISTS game.ability;\n\nCREATE TABLE IF NOT EXISTS game.ability\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    name character varying COLLATE pg_catalog.\"default\" NOT NULL,\n    pattern character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    range integer NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_pkey PRIMARY KEY (id)\n);\n\n-- Table: game.ability_effect\n\n-- DROP TABLE IF EXISTS game.ability_effect;\n\nCREATE TABLE IF NOT EXISTS game.ability_effect\n(\n    id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    ability_id UUID COLLATE pg_catalog.\"default\" NOT NULL,\n    expression jsonb NOT NULL,\n    effect_type character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    damage_type_id UUID COLLATE pg_catalog.\"default\",\n    alignment character varying(20) COLLATE pg_catalog.\"default\" NOT NULL,\n    created_at timestamp with time zone NOT NULL,\n    updated_at timestamp with time zone NOT NULL,\n    deleted_at timestamp with time zone,\n    CONSTRAINT ability_effect_pkey PRIMARY KEY (id)\n); (details: pq: collations are not supported by type uuid at position 7:13 (42804))"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle POST /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle DELETE /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currently open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle POST /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle DELETE /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currently open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle POST /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle DELETE /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currently open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle GET /ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle GET /ability/{id} endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle POST /ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle DELETE /ability/{id} endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle POST /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle DELETE /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Save Ability endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Call service to save ability.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Save ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":""}
+{"sev":"TRACE","msg":"Generated new id for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"a93ee46d-6311-4241-a78f-c4888bb515d4"}
+{"sev":"TRACE","msg":"Upserting ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"a93ee46d-6311-4241-a78f-c4888bb515d4"}
+{"sev":"DEBUG","msg":"Upsert ability.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"a93ee46d-6311-4241-a78f-c4888bb515d4"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currently open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Replacing effects for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"a93ee46d-6311-4241-a78f-c4888bb515d4"}
+{"sev":"DEBUG","msg":"Delete effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"a93ee46d-6311-4241-a78f-c4888bb515d4"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Ability saved successfully.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"a93ee46d-6311-4241-a78f-c4888bb515d4"}
+{"sev":"DEBUG","msg":"Completed Save Ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Save Ability endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Call service to save ability.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Save ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":""}
+{"sev":"TRACE","msg":"Generated new id for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1628f55a-6b64-451a-b076-035cf8dd233b"}
+{"sev":"ERROR","msg":"Failed to save ability.","file_name":"ability_controller.go","class":"AbilityController","error":"damage effect is missing damage_type_id"}
+{"sev":"DEBUG","msg":"Get All Damage Types endpoint hit.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Get all damage types.","file_name":"damage_type_service.go","class_name":"DamageTypeService"}
+{"sev":"DEBUG","msg":"Get all damage types.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get All Damage Types endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Save Damage Type endpoint hit.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Call service to save damage type.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Save damage type.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":""}
+{"sev":"TRACE","msg":"Generated new id for damage type.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"TRACE","msg":"Upserting damage type.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Upsert damage type.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Damage type saved successfully.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Completed Save Damage Type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Get All Damage Types endpoint hit.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Get all damage types.","file_name":"damage_type_service.go","class_name":"DamageTypeService"}
+{"sev":"DEBUG","msg":"Get all damage types.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get All Damage Types endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Save Ability endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Call service to save ability.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Save ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":""}
+{"sev":"TRACE","msg":"Generated new id for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"6136986c-0631-4506-8c57-0ce3c9af2f6f"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Generated new id for ability effect.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"b700fe92-5b44-4c25-a194-fecffcfa282c"}
+{"sev":"TRACE","msg":"Upserting ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"6136986c-0631-4506-8c57-0ce3c9af2f6f"}
+{"sev":"DEBUG","msg":"Upsert ability.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"6136986c-0631-4506-8c57-0ce3c9af2f6f"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Replacing effects for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"6136986c-0631-4506-8c57-0ce3c9af2f6f"}
+{"sev":"DEBUG","msg":"Delete effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"6136986c-0631-4506-8c57-0ce3c9af2f6f"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Upsert ability effect.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"b700fe92-5b44-4c25-a194-fecffcfa282c","ability_id":"6136986c-0631-4506-8c57-0ce3c9af2f6f"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"ERROR","msg":"Failed to upsert ability effect.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","error":"pq: column \"created_at\" of relation \"ability_effect\" does not exist at position 3:36 (42703)","id":"b700fe92-5b44-4c25-a194-fecffcfa282c"}
+{"sev":"ERROR","msg":"Failed to upsert ability effect.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","error":"pq: column \"created_at\" of relation \"ability_effect\" does not exist at position 3:36 (42703)","id":"b700fe92-5b44-4c25-a194-fecffcfa282c"}
+{"sev":"ERROR","msg":"Failed to save ability.","file_name":"ability_controller.go","class":"AbilityController","error":"pq: column \"created_at\" of relation \"ability_effect\" does not exist at position 3:36 (42703)"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle GET /ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle GET /ability/{id} endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle POST /ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle DELETE /ability/{id} endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle POST /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle DELETE /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Save Ability endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Call service to save ability.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Save ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":""}
+{"sev":"TRACE","msg":"Generated new id for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"213c3484-abda-4fb5-955a-4c4afef36053"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currently open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"TRACE","msg":"Generated new id for ability effect.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1751b48b-c473-4f15-bc48-a38385eda21a"}
+{"sev":"TRACE","msg":"Upserting ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"213c3484-abda-4fb5-955a-4c4afef36053"}
+{"sev":"DEBUG","msg":"Upsert ability.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"213c3484-abda-4fb5-955a-4c4afef36053"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Replacing effects for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"213c3484-abda-4fb5-955a-4c4afef36053"}
+{"sev":"DEBUG","msg":"Delete effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"213c3484-abda-4fb5-955a-4c4afef36053"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Upsert ability effect.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"1751b48b-c473-4f15-bc48-a38385eda21a","ability_id":"213c3484-abda-4fb5-955a-4c4afef36053"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"ERROR","msg":"Failed to upsert ability effect.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","error":"pq: column \"created_at\" of relation \"ability_effect\" does not exist at position 3:36 (42703)","id":"1751b48b-c473-4f15-bc48-a38385eda21a"}
+{"sev":"ERROR","msg":"Failed to upsert ability effect.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","error":"pq: column \"created_at\" of relation \"ability_effect\" does not exist at position 3:36 (42703)","id":"1751b48b-c473-4f15-bc48-a38385eda21a"}
+{"sev":"ERROR","msg":"Failed to save ability.","file_name":"ability_controller.go","class":"AbilityController","error":"pq: column \"created_at\" of relation \"ability_effect\" does not exist at position 3:36 (42703)"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"down","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationDown command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":-1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":-1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":3,"latest_version":4,"pending":1,"total":4,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":4,"pending":0,"total":4,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Save Ability endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Call service to save ability.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Save ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":""}
+{"sev":"TRACE","msg":"Generated new id for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Generated new id for ability effect.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"6ba54322-97e2-4c73-a51b-0456c698e4af"}
+{"sev":"TRACE","msg":"Upserting ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Upsert ability.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Replacing effects for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Delete effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Upsert ability effect.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"6ba54322-97e2-4c73-a51b-0456c698e4af","ability_id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Ability saved successfully.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Completed Save Ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Get All Abilities endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Get all abilities.","file_name":"ability_service.go","class_name":"AbilityServiceImpl"}
+{"sev":"DEBUG","msg":"Get all abilities.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get All Abilities endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Get Ability By ID endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Get ability by id.","file_name":"ability_controller.go","class":"AbilityController","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get Ability By ID endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Get Ability By ID endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Get ability by id.","file_name":"ability_controller.go","class":"AbilityController","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get Ability By ID endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Delete Ability endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Call service to delete ability.","file_name":"ability_controller.go","class":"AbilityController","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Delete ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Upserting ability with deleted_at.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Upsert ability.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Ability deleted successfully.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Completed Delete Ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Delete Ability endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Call service to delete ability.","file_name":"ability_controller.go","class":"AbilityController","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Delete ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Upserting ability with deleted_at.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Upsert ability.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Ability deleted successfully.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"1f018008-c510-4601-8579-94a783ff41ad"}
+{"sev":"DEBUG","msg":"Completed Delete Ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Get All Abilities endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Get all abilities.","file_name":"ability_service.go","class_name":"AbilityServiceImpl"}
+{"sev":"DEBUG","msg":"Get all abilities.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get All Abilities endpoint.","file_name":"ability_controller.go","class":"AbilityController"}

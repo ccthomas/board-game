@@ -57,7 +57,7 @@
           "testScript": "",
           "body": {
             "contentType": "application/json",
-            "body": "{\n  // up|down\n  \"command\": \"up\",\n  // optional - if omitted, run all\n  // \"quantity\": 1\n}"
+            "body": "{\n  // up|down\n  \"command\": \"up\",\n  // optional - if omitted, run all\n  \"quantity\": 1\n}"
           },
           "requestVariables": [],
           "responses": {},
@@ -169,6 +169,104 @@
       "headers": [],
       "variables": [],
       "description": null
+    },
+    {
+      "v": 11,
+      "name": "Ability",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "endpoint": "<<api>>/ability",
+          "name": "Save Ability",
+          "params": [],
+          "headers": [],
+          "method": "POST",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"Slash\",\n\n  // Targeting Pattern\n  // single | adjacent | line | cone | self | ally_all | enemy_all\n  \"pattern\": \"single\",\n\n  // Number of tiles. Zero equals same tile\n  \"range\": 0,\n\n  \"effects\": [\n    {\n      // 1d6+2\n      \"expression\": {\n        \"num_dice\": 1,\n        \"die_type\": 6, // d6\n        \"modifier\": 2,\n      },\n\n      // damage | defence | healing\n      \"effect_type\": \"damage\",\n\n      // enemy | ally | self | any\n      \"alignment\": \"enemy\",\n\n      // API will priortize damage type id. If empty, will look to damage tpye if provided.\n      \"damageType\": { /* Look to Damage Type api */ },\n      \"damageTypeId\": \"fdb38212-bf78-4e82-9bd8-e8f883582825\",\n    }\n  ]\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "endpoint": "<<api>>/ability",
+          "name": "Get All Abilities",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "endpoint": "<<api>>/ability/<<ability_id>>",
+          "name": "Get Ability By Id",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "endpoint": "<<api>>/ability/<<ability_id>>",
+          "name": "Delete Ability By Id",
+          "params": [],
+          "headers": [],
+          "method": "DELETE",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
     }
   ],
   "requests": [],
@@ -186,6 +284,12 @@
     },
     {
       "key": "damage_type_id",
+      "currentValue": "",
+      "initialValue": "",
+      "secret": false
+    },
+    {
+      "key": "ability_id",
       "currentValue": "",
       "initialValue": "",
       "secret": false

@@ -48,3 +48,17 @@ Download [Hoppscotch] and open the `Board Game Hoppscotch Collection.json` file.
   ```cmd
   docker system prune -a --volumes -f
   ```
+
+* New Mock
+  ```cmd
+  go install go.uber.org/mock/mockgen@latest
+
+  export PATH=$PATH:$(go env GOPATH)/bin
+
+  mockgen --source=internal/folder/file.go --destination=internal/folder/mock/mock_file.go
+  ```
+
+    mockgen --source=internal/repository/ability_repository.go --destination=internal/repository/mock/mock_ability_repository.go
+
+
+    mockgen --source=internal/service/ability_service.go --destination=internal/service/mock/mock_ability_service.go

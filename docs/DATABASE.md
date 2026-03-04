@@ -13,3 +13,7 @@ docker run --rm -v $(pwd)/backend/db/migrations:/migrations migrate/migrate \
 ## Run Migrations
 
 Call the configuration database migration apis to run migrations. You can find documentation on the APIs under the TECHINICAL-API-DESIGN.md document. Look for the Configuration APIs for details on migrations
+
+## TODO
+
+Covnert ID feilds from 36bit VARCHAR to 16bit UUID.
