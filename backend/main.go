@@ -57,6 +57,7 @@ func main() {
 	// -------------------------
 	mainLogger.Debug("Configuring databases...")
 	abilityRepo := repository.NewAbilityRepositoryPostgres(logger, database)
+	creatureRepo := repository.NewCreatureRepositoryPostgres(logger, database)
 	damageTypeRepo := repository.NewDamageTypeRepositoryPostgres(logger, database)
 
 	// -------------------------
@@ -73,10 +74,17 @@ func main() {
 		damageTypeService,
 	)
 
+	creatureService := s.NewCreatureServiceImpl(
+		logger,
+		creatureRepo,
+		abilityService,
+	)
+
 	// -------------------------
 	// Controllers
 	// -------------------------
 	mainLogger.Debug("Configuring controllers...")
+	creatureController := c.NewCreatureController(logger, creatureService)
 	configurationController := c.NewConfigurationController(logger, configurationService)
 	abilityController := c.NewAbilityController(logger, abilityService)
 	damageTypeController := c.NewDamageTypeController(logger, damageTypeService)
@@ -90,9 +98,10 @@ func main() {
 	apiRouter := router.PathPrefix("/api").Subrouter()
 
 	abilityController.HandleSubrouter(apiRouter)
-	healthController.HandleSubrouter(apiRouter)
-	damageTypeController.HandleSubrouter(apiRouter)
 	configurationController.HandleSubrouter(apiRouter)
+	creatureController.HandleSubrouter(apiRouter)
+	damageTypeController.HandleSubrouter(apiRouter)
+	healthController.HandleSubrouter(apiRouter)
 
 	// -------------------------
 	// Server

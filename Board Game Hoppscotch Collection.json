@@ -267,6 +267,104 @@
       "headers": [],
       "variables": [],
       "description": null
+    },
+    {
+      "v": 11,
+      "name": "Creature",
+      "folders": [],
+      "requests": [
+        {
+          "v": "17",
+          "endpoint": "<<api>>/creature/<<creature_id>>",
+          "name": "Delete Creature By Id",
+          "params": [],
+          "headers": [],
+          "method": "DELETE",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "endpoint": "<<api>>/creature/<<creature_id>>",
+          "name": "Get Creature By Id",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "endpoint": "<<api>>/creature",
+          "name": "Get All Creatures",
+          "params": [],
+          "headers": [],
+          "method": "GET",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        },
+        {
+          "v": "17",
+          "endpoint": "<<api>>/creature",
+          "name": "Save Creature",
+          "params": [],
+          "headers": [],
+          "method": "POST",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "preRequestScript": "",
+          "testScript": "",
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"Goblin Scout\",\n  \"health_points\": 12,\n\n  // 1d6+2\n  \"defence\": {\n    \"num_dice\": 1,\n    \"die_type\": 6,\n    \"modifier\": 2\n  },\n  \"initiative\": 4,\n  \"movement\": 3,\n  \"action_count\": 1,\n  \"abilities\": [\n    {\n      \"ability\": { /* C+P Ability from /ability payload */ },\n      \"roll_threshold\": 1\n    }\n  ]\n}"
+          },
+          "requestVariables": [],
+          "responses": {},
+          "description": null
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "variables": [],
+      "description": null
     }
   ],
   "requests": [],
@@ -290,6 +388,12 @@
     },
     {
       "key": "ability_id",
+      "currentValue": "",
+      "initialValue": "",
+      "secret": false
+    },
+    {
+      "key": "creature_id",
       "currentValue": "",
       "initialValue": "",
       "secret": false

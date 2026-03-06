@@ -393,3 +393,160 @@ func AssertAbilityEffect(t *testing.T, expected *model.AbilityEffect, actual *mo
 	AssertTimeEqual(t, "updated_at", expected.UpdatedAt, actual.UpdatedAt)
 	AssertTimeEqual(t, "deleted_at", expected.DeletedAt, actual.DeletedAt)
 }
+
+func CreateCreature(
+	id *string,
+	name *string,
+	healthPoints *int,
+	defence *model.DiceExpression,
+	initiative *int,
+	movement *int,
+	actionCount *int,
+	createdAt *time.Time,
+	deletedAt *time.Time,
+) model.Creature {
+	defaultID := uuid.New().String()
+	defaultName := uuid.New().String()
+	defaultHealthPoints := 10
+	defaultDefence := model.DiceExpression{NumDice: 1, DieType: model.D6, Modifier: 0}
+	defaultInitiative := 5
+	defaultMovement := 3
+	defaultActionCount := 1
+	now := time.Now()
+	defaultCreatedAt := now.Add(-3 * time.Second)
+	defaultUpdatedAt := now.Add(-2 * time.Second)
+	defaultDeletedAt := now.Add(-1 * time.Second)
+
+	c := model.Creature{
+		ID:           defaultID,
+		Name:         defaultName,
+		HealthPoints: defaultHealthPoints,
+		Defence:      defaultDefence,
+		Initiative:   defaultInitiative,
+		Movement:     defaultMovement,
+		ActionCount:  defaultActionCount,
+		CreatedAt:    &defaultCreatedAt,
+		UpdatedAt:    &defaultUpdatedAt,
+		DeletedAt:    &defaultDeletedAt,
+		Abilities:    []model.AbilitySlot{},
+	}
+
+	if id != nil {
+		c.ID = *id
+	}
+	if name != nil {
+		c.Name = *name
+	}
+	if healthPoints != nil {
+		c.HealthPoints = *healthPoints
+	}
+	if defence != nil {
+		c.Defence = *defence
+	}
+	if initiative != nil {
+		c.Initiative = *initiative
+	}
+	if movement != nil {
+		c.Movement = *movement
+	}
+	if actionCount != nil {
+		c.ActionCount = *actionCount
+	}
+	if createdAt != nil {
+		c.CreatedAt = createdAt
+	}
+	if deletedAt != nil {
+		c.DeletedAt = deletedAt
+	}
+
+	return c
+}
+
+func AssertCreature(t *testing.T, expected *model.Creature, actual *model.Creature) {
+	t.Helper()
+	if actual == nil {
+		t.Fatal("expected creature, got nil")
+	}
+	if actual.ID != expected.ID {
+		t.Fatalf("expected id to equal expected: \"%s\" actual: \"%s\"", expected.ID, actual.ID)
+	}
+	if actual.Name != expected.Name {
+		t.Fatalf("expected name to equal expected: \"%s\" actual: \"%s\"", expected.Name, actual.Name)
+	}
+	if actual.HealthPoints != expected.HealthPoints {
+		t.Fatalf("expected health_points to equal expected: \"%d\" actual: \"%d\"", expected.HealthPoints, actual.HealthPoints)
+	}
+	if actual.Defence.NumDice != expected.Defence.NumDice {
+		t.Fatalf("expected defence.num_dice to equal expected: \"%d\" actual: \"%d\"", expected.Defence.NumDice, actual.Defence.NumDice)
+	}
+	if actual.Defence.DieType != expected.Defence.DieType {
+		t.Fatalf("expected defence.die_type to equal expected: \"%d\" actual: \"%d\"", expected.Defence.DieType, actual.Defence.DieType)
+	}
+	if actual.Defence.Modifier != expected.Defence.Modifier {
+		t.Fatalf("expected defence.modifier to equal expected: \"%d\" actual: \"%d\"", expected.Defence.Modifier, actual.Defence.Modifier)
+	}
+	if actual.Initiative != expected.Initiative {
+		t.Fatalf("expected initiative to equal expected: \"%d\" actual: \"%d\"", expected.Initiative, actual.Initiative)
+	}
+	if actual.Movement != expected.Movement {
+		t.Fatalf("expected movement to equal expected: \"%d\" actual: \"%d\"", expected.Movement, actual.Movement)
+	}
+	if actual.ActionCount != expected.ActionCount {
+		t.Fatalf("expected action_count to equal expected: \"%d\" actual: \"%d\"", expected.ActionCount, actual.ActionCount)
+	}
+
+	AssertTimeEqual(t, "created_at", expected.CreatedAt, actual.CreatedAt)
+	AssertTimeEqual(t, "updated_at", expected.UpdatedAt, actual.UpdatedAt)
+	AssertTimeEqual(t, "deleted_at", expected.DeletedAt, actual.DeletedAt)
+}
+
+func CreateAbilitySlot(creatureID *string, abilityID *string, rollThreshold *int) model.AbilitySlot {
+	defaultCreatureID := uuid.New().String()
+	defaultAbilityID := uuid.New().String()
+	defaultRollThreshold := 10
+	now := time.Now()
+	defaultCreatedAt := now.Add(-3 * time.Second)
+	defaultUpdatedAt := now.Add(-2 * time.Second)
+	defaultDeletedAt := now.Add(-1 * time.Second)
+
+	s := model.AbilitySlot{
+		CreatureID:    defaultCreatureID,
+		AbilityID:     defaultAbilityID,
+		RollThreshold: defaultRollThreshold,
+		CreatedAt:     &defaultCreatedAt,
+		UpdatedAt:     &defaultUpdatedAt,
+		DeletedAt:     &defaultDeletedAt,
+	}
+
+	if creatureID != nil {
+		s.CreatureID = *creatureID
+	}
+	if abilityID != nil {
+		s.AbilityID = *abilityID
+	}
+	if rollThreshold != nil {
+		s.RollThreshold = *rollThreshold
+	}
+
+	return s
+}
+
+func AssertAbilitySlot(t *testing.T, expected *model.AbilitySlot, actual *model.AbilitySlot) {
+	t.Helper()
+	if actual == nil {
+		t.Fatal("expected ability slot, got nil")
+	}
+	if actual.CreatureID != expected.CreatureID {
+		t.Fatalf("expected creature_id to equal expected: \"%s\" actual: \"%s\"", expected.CreatureID, actual.CreatureID)
+	}
+	if actual.AbilityID != expected.AbilityID {
+		t.Fatalf("expected ability_id to equal expected: \"%s\" actual: \"%s\"", expected.AbilityID, actual.AbilityID)
+	}
+	if actual.RollThreshold != expected.RollThreshold {
+		t.Fatalf("expected roll_threshold to equal expected: \"%d\" actual: \"%d\"", expected.RollThreshold, actual.RollThreshold)
+	}
+
+	AssertTimeEqual(t, "created_at", expected.CreatedAt, actual.CreatedAt)
+	AssertTimeEqual(t, "updated_at", expected.UpdatedAt, actual.UpdatedAt)
+	AssertTimeEqual(t, "deleted_at", expected.DeletedAt, actual.DeletedAt)
+}

@@ -1043,3 +1043,190 @@
 {"sev":"DEBUG","msg":"Get all abilities.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres"}
 {"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
 {"sev":"DEBUG","msg":"Completed Get All Abilities endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"INFO","msg":"Configured logger with settings","file_name":"logger_slog.go","log_level":"TRACE","log_file_name":"board-game.log","log_terminal":"true"}
+{"sev":"INFO","msg":"==============================","file_name":"main.go"}
+{"sev":"INFO","msg":"Board Game Backend starting...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring databases...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring services...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring controllers...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Configuring router...","file_name":"main.go"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle GET /ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle GET /ability/{id} endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle POST /ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Handle DELETE /ability/{id} endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Handle Subrounder.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Handle POST /database/migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"TRACE","msg":"Handle GET /creature endpoint.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"TRACE","msg":"Handle GET /creature/{id} endpoint.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"TRACE","msg":"Handle POST /creature endpoint.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"TRACE","msg":"Handle DELETE /creature/{id} endpoint.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Handle Subrouter.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle GET /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle POST /damage-type endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"TRACE","msg":"Handle DELETE /damage-type/{id} endpoint.","file_name":"damage_type_controller.go","class":"DamageTypeController"}
+{"sev":"DEBUG","msg":"Handle Subrounter.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"TRACE","msg":"Handle GET /health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"INFO","msg":"Configuring cors...","file_name":"main.go"}
+{"sev":"INFO","msg":"Listening & Serving service on port.","file_name":"main.go","post":":80"}
+{"sev":"DEBUG","msg":"Get All Creatures endpoint hit.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Get all creatures.","file_name":"creature_service.go","class_name":"CreatureServiceImpl"}
+{"sev":"DEBUG","msg":"Get all creatures.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"No connection currently open, attempt to connect to db.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Connect Postgres Database","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Open connection to postgres db.","file_name":"database_postgres.go","class_name":"DatabasePostgres","dsn":"user=admin password=admin dbname=board-game host=localhost port=5432 sslmode=disable TimeZone=America/New_York"}
+{"sev":"ERROR","msg":"Failed to query creatures.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres","error":"pq: relation \"game.creature\" does not exist at position 4:8 (42P01)"}
+{"sev":"ERROR","msg":"Failed to get all creatures.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","error":"pq: relation \"game.creature\" does not exist at position 4:8 (42P01)"}
+{"sev":"ERROR","msg":"Failed to get all creatures.","file_name":"creature_controller.go","class":"CreatureController","error":"pq: relation \"game.creature\" does not exist at position 4:8 (42P01)"}
+{"sev":"DEBUG","msg":"Get Health endpoint hit.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"GetDatabaseVersion invoked.","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"TRACE","msg":"Calling database.Version().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Retrieved postgres version.","file_name":"database_postgres.go","class_name":"DatabasePostgres","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"}
+{"sev":"TRACE","msg":"Calling database.MigrationStatus().","file_name":"health_service.go","class_name":"HealthService"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":5,"pending":1,"total":5,"dirty":false}
+{"sev":"DEBUG","msg":"Successfully retrieved database status.","file_name":"health_service.go","class_name":"HealthService","status":{"health":"Healthy","version":"PostgreSQL 18.3 (Debian 18.3-1.pgdg13+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","migration_status":{"current_version":4,"latest_version":5,"pending":1,"total":5,"dirty":false}}}
+{"sev":"DEBUG","msg":"Completed Get Health endpoint.","file_name":"health_controller.go","class":"HealthController"}
+{"sev":"DEBUG","msg":"Run Database Migration endpoint hit.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"TRACE","msg":"Call service to run database migration.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"RunDatabaseMigration invoked.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Evaluating migration command.","file_name":"configuration_service.go","class_name":"ConfigurationService","command":"up","quantity":1}
+{"sev":"DEBUG","msg":"Executing MigrationUp command.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"TRACE","msg":"Running MigrationSteps.","file_name":"configuration_service.go","class_name":"ConfigurationService","steps":1}
+{"sev":"DEBUG","msg":"Step through postgres migrations.","file_name":"database_postgres.go","class_name":"DatabasePostgres","steps":1}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":4,"latest_version":5,"pending":1,"total":5,"dirty":false}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Get migration status.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get postgres driver instance.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Get new migrate instance from postgres driver.","file_name":"database_postgres.go","class_name":"DatabasePostgres","path":"/Users/ccthomas/Documents/Repositories/board-game/backend/db/migrations"}
+{"sev":"DEBUG","msg":"Migration status retrieved.","file_name":"database_postgres.go","class_name":"DatabasePostgres","current_version":5,"latest_version":5,"pending":0,"total":5,"dirty":false}
+{"sev":"DEBUG","msg":"RunDatabaseMigration completed successfully.","file_name":"configuration_service.go","class_name":"ConfigurationService"}
+{"sev":"DEBUG","msg":"Completed Run Database Migration endpoint.","file_name":"configuration_controller.go","class":"ConfigurationController"}
+{"sev":"DEBUG","msg":"Get All Creatures endpoint hit.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Get all creatures.","file_name":"creature_service.go","class_name":"CreatureServiceImpl"}
+{"sev":"DEBUG","msg":"Get all creatures.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get All Creatures endpoint.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Save Creature endpoint hit.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"TRACE","msg":"Call service to save creature.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Save creature.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":""}
+{"sev":"TRACE","msg":"Generated new id for creature.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":"5be918ea-e5fa-4130-89f8-db189e0cb6b0"}
+{"sev":"ERROR","msg":"Failed to save creature.","file_name":"creature_controller.go","class":"CreatureController","error":"ability slot is missing ability_id"}
+{"sev":"DEBUG","msg":"Get All Abilities endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Get all abilities.","file_name":"ability_service.go","class_name":"AbilityServiceImpl"}
+{"sev":"DEBUG","msg":"Get all abilities.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get All Abilities endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Get All Abilities endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Get all abilities.","file_name":"ability_service.go","class_name":"AbilityServiceImpl"}
+{"sev":"DEBUG","msg":"Get all abilities.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get All Abilities endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Save Ability endpoint hit.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"TRACE","msg":"Call service to save ability.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Save ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":""}
+{"sev":"TRACE","msg":"Generated new id for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Generated new id for ability effect.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"7e8ae484-89b1-46cf-9c8f-6c174868248d"}
+{"sev":"TRACE","msg":"Upserting ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Upsert ability.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Replacing effects for ability.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Delete effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Upsert ability effect.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"7e8ae484-89b1-46cf-9c8f-6c174868248d","ability_id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Ability saved successfully.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Completed Save Ability endpoint.","file_name":"ability_controller.go","class":"AbilityController"}
+{"sev":"DEBUG","msg":"Save Creature endpoint hit.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"TRACE","msg":"Decode request body.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"TRACE","msg":"Call service to save creature.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Save creature.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":""}
+{"sev":"TRACE","msg":"Generated new id for creature.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"TRACE","msg":"Falling back to transient ability id for slot.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","ability_id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Upserting creature.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Upsert creature.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Replacing ability slots for creature.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Delete ability slots by creature id.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres","creature_id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Upsert ability slot.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres","creature_id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4","ability_id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Creature saved successfully.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Completed Save Creature endpoint.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Get All Creatures endpoint hit.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Get all creatures.","file_name":"creature_service.go","class_name":"CreatureServiceImpl"}
+{"sev":"DEBUG","msg":"Get all creatures.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get ability slots by creature id.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres","creature_id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get All Creatures endpoint.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Get Creature By ID endpoint hit.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"TRACE","msg":"Get creature by id.","file_name":"creature_controller.go","class":"CreatureController","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get creature by id.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get creature by id.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get ability slots by creature id.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres","creature_id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_service.go","class_name":"AbilityServiceImpl","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get ability by id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get effects by ability id.","file_name":"ability_repository_postgres.go","class_name":"AbilityRepositoryPostgres","ability_id":"d0ff64be-c392-4b6f-a3b2-dc0a4e696130"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_service.go","class_name":"DamageTypeService","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get damage type by id.","file_name":"damage_type_repository_postgres.go","class_name":"DamageTypeRepositoryPostgres","id":"fdb38212-bf78-4e82-9bd8-e8f883582825"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get Creature By ID endpoint.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Delete Creature endpoint hit.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"TRACE","msg":"Call service to delete creature.","file_name":"creature_controller.go","class":"CreatureController","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Delete creature.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get creature by id.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Get ability slots by creature id.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres","creature_id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"TRACE","msg":"Upserting creature with deleted_at.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Upsert creature.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Creature deleted successfully.","file_name":"creature_service.go","class_name":"CreatureServiceImpl","id":"9d94dc59-ce8a-4605-a3ee-878b5edb3df4"}
+{"sev":"DEBUG","msg":"Completed Delete Creature endpoint.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Get All Creatures endpoint hit.","file_name":"creature_controller.go","class":"CreatureController"}
+{"sev":"DEBUG","msg":"Get all creatures.","file_name":"creature_service.go","class_name":"CreatureServiceImpl"}
+{"sev":"DEBUG","msg":"Get all creatures.","file_name":"creature_repository_postgres.go","class_name":"CreatureRepositoryPostgres"}
+{"sev":"DEBUG","msg":"Get Postgres connection.","file_name":"database_postgres.go","class_name":"DatabasePostgres"}
+{"sev":"DEBUG","msg":"Completed Get All Creatures endpoint.","file_name":"creature_controller.go","class":"CreatureController"}
